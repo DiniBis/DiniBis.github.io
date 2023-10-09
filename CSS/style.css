@@ -1,0 +1,131 @@
+/*import des polices*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+
+/*Mes variables : 
+- Marge générale,
+- Couleur Header,
+- Couleur Fond,
+- Couleur Footer*/
+:root {
+    --main-margin: 40px;
+    --main-color: #eae8e7;
+    --main-color1: rgb(240, 248, 255);
+    --main-color2: rgb(32, 8, 67);
+}
+
+
+/*Mobile*/
+@media (max-width: 640px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+
+/*Ordinateur 16:9*/
+@media (min-width: 1024px) and (max-width:1400px){
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 80px;
+        justify-content: space-evenly;
+    }
+
+    .Compétences {order: 4;}
+    .Expériences {order:3;}
+    .A-propos {order: 5; justify-self: unset; margin-bottom: 20px;}
+}
+
+/*Couleur du fond*/
+body {background-color: rgb(240, 248, 255);
+    margin: 0;
+}
+
+/*image ronde et description en dessous*/
+img {border-radius: 100%;}
+figcaption {margin-left: 30px;}
+
+/*Police des textes*/
+h2,
+h3 {
+    margin-left: var(--main-margin);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p,
+li,
+label {
+    font-family: Mukta, sans-serif;
+    margin-left: var(--main-margin);
+    text-align-last: auto;
+}
+h1 {
+    font-size: 45px;
+    font-family: "Roboto+Condensed", sans-serif;
+    color: rgb(52, 111, 91);  
+    text-align: center;
+    padding: 20px;
+}
+
+/*Bandeau Suppérieur*/
+.Bandeau-supperieur {
+    background-color: var(--main-color);
+    box-shadow: 3px 3px 3px rgb(213, 219, 224);
+}
+header {
+    margin: 20px;
+}
+
+/*Tableau*/
+table {
+
+    border-radius: 3%;
+    border-color: rgb(71, 215, 213);
+    background-color: white;
+    margin-left: 20px;
+}
+/*Tableau -> couleur des cellules*/
+th {background-color: rgb(156, 215, 215);}
+td:hover{background-color: aquamarine;}
+
+/*Listes*/
+ul {
+    margin-left: 20px;
+    border-left: solid rgb(11, 86, 134) 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px rgba(8, 25, 52, 0.361);
+    list-style-type: none;
+    padding-right: 20px;
+}
+li {margin-left: -28.3px;}
+
+/*Form et Contact, tout le footer*/
+footer {
+    background: rgb(57,50,146);
+    background: linear-gradient(0deg, rgba(57,50,146,1) 17%, rgba(38,143,144,1) 100%); 
+    margin: 0;
+    padding: 30px;
+}
+footer p,
+footer h3,
+footer form {
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+input:checked,
+input:required,
+input:checked {
+    background-color: greenyellow;
+}
+
+footer a {
+    color: rgb(0, 255, 255);
+    margin-left: 20px;
+}
