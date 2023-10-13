@@ -27,7 +27,7 @@
 
 
 /*Ordinateur 16:9*/
-@media (min-width: 1024px) and (max-width:1400px){
+@media (min-width: 1024px) and (max-width:1800px){
     main {
         display: flex;
         flex-direction: row;
