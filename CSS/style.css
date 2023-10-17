@@ -17,7 +17,7 @@
 
 
 /*Mobile*/
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
     main {
         display: flex;
         flex-wrap: wrap;
@@ -27,7 +27,7 @@
 
 
 /*Ordinateur 16:9*/
-@media (min-width: 1024px) and (max-width:2000px){
+@media (min-width: 1024px) {
     main {
         display: flex;
         flex-direction: row;
