@@ -1,0 +1,257 @@
+/*Retire quelques options d'origine du navigateur*/
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+html {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px; /*Défini la taille du rem à 16px*/
+}
+main{min-height: 85vh;} /*Force le main à prendre assez d'espace pour ne pas avoir de vide sous le footer*/
+
+/*Mobile*/
+@media (min-width:302px) and (max-width: 800px) {
+    .header ul {
+        gap: 10%;
+    }
+    .Preview-Categorie, .Preview-Article {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
+    }
+    .form-gauche{
+        display: flex;
+        flex-direction: column;
+        gap: 0,5em;
+    }
+    .form-droite{
+        display: flex;
+        flex-direction: column;
+    }
+    textarea{
+        display: flex;
+        align-items: stretch;
+    }
+    .no-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #bouton-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+}
+@media (min-width: 800px){
+    .column {
+        display: flex;
+        justify-content: center;
+    }
+    form {flex-direction: column;}
+    textarea{
+        width: 515px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 1000px){
+    .column {
+        display: flex;
+        justify-content: center;
+    }
+    .slide {
+        flex: 1;
+        margin-right: 10px; 
+    }
+    .infoproduit {
+        flex: 1;
+        border-left: solid 2px;
+        padding: 1rem;
+    }
+    .column input {
+        width: min-content;
+        height: min-content;
+        align-self: flex-end;
+        margin: 0.3rem;
+    }
+    form {display: flex;}
+    .formulaire-info {
+        flex: 1;
+    }
+    .formulaire-texte {
+        flex: 1;
+    }
+    .formulaire-button {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/*Changer les polices*/
+h1,h2,h3,a,p,li {font-family: cursive;}
+h1,h2,p{margin-left: 2vh;}
+
+.red {color: red;}
+/*Changer la couleur du bandeau suppérieur */
+.header {
+    background-color: aliceblue;
+    margin: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 3px 3px 3px rgb(213, 219, 224);
+}
+.header ul {
+    margin: 0px;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+}
+
+.header img {
+    max-width: 30px;
+    max-height: 30px;
+}
+/*De base n'affiche pas le menu déroulant*/
+.menuderoulant .sousmenu{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+}
+/*Affiche le menu déroulant quand le bloc est survolé*/
+.scroll:hover .sousmenu {
+    display: block;
+    text-align: center;
+    background-color: rgba(210, 240, 240, 0.66);
+    z-index: 0;
+    box-shadow: 3px,3px,3px rgba(rgba(75, 79, 82, 0.916));
+}
+/*Change de couleur quand survolé*/
+.scroll .sousmenu li:hover {
+    background-color: aquamarine;
+}
+/*Change de couleur quand cliqué*/
+.scroll .sousmenu li:active {
+    background-color: blue;
+}
+.menuderoulant {
+    display: flex;
+    gap: 20%;
+}
+.sousmenu {
+    padding: 10px;
+}
+
+/*Marquee*/
+.Bandeau-Defilant {
+    font-size: 24px;
+    animation: MARQUEE 50s linear infinite;
+    z-index: -1;
+}
+main {overflow: hidden;} /*Empêche le marquee de casser mon responsive*/
+
+
+@keyframes MARQUEE {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(90%);
+    }
+}
+
+
+
+/*Footer*/
+footer {
+    background: rgb(201,249,234);
+    background: linear-gradient(90deg, rgba(201,249,234,1) 23%, rgba(80,223,158,1) 70%, rgba(78,217,224,1) 100%); 
+    margin: 0;
+    padding: 30px;
+}
+
+/*Preview Categorie*/
+.Preview-Categorie ul li {
+    background-color: aquamarine;
+    list-style-type: none;  
+    padding: 50px;
+    border-radius: 60px; 
+    margin-bottom: 1vh;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.224);
+}
+.Preview-Categorie ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10%;
+    padding-left: 0px;
+}
+.Preview-Categorie li a {
+    color: black;
+    transition-duration: 1s;
+}
+.Preview-Categorie li a:hover {
+    padding: 10px;
+    margin: 10px;
+    transition-duration: 1s;
+}
+.Preview-Article ul {
+    background-color: aliceblue;
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 10px;
+    width:175px;
+    justify-content: center;
+    box-shadow: 3px 3px 3px rgb(213, 219, 224);
+}
+.Preview-Article li img {
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 5px;
+    transition-duration: 1s;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+.Preview-Article li img:hover {
+    padding-left: 40px;
+    transition-duration: 1s;
+}
+
+.Preview-Article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5%;
+    margin-bottom: 1vh;
+    z-index: 1;
+}
+
+/*Page Article*/
+.slide ul li{
+    list-style-type: none;
+}
+.slide {
+    overflow: hidden;
+}
+.carousel {
+    display: flex;
+}
+.carousel img {
+    width: 100%;
+}
+
+/*Page Support*/
+.formulaire form{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}

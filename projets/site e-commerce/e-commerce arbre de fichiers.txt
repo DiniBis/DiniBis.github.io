@@ -1,0 +1,61 @@
+index.html 	(la page d'acceuil)
+
+
+form.html	(page d'achat via le bouton acheter sur une page article / panier)
+
+
+[ ]catégories :
+	- categorie1.html		(Consoles)
+	- categorie2.html		(Manettes)
+	- categorie3.html		(Accessoires)
+	- categorie4.html		(Jeux)
+
+[ ]produits :  	(dans les pages catégories et index en preview) / (voir même lier avec les autres pages ex: Gamecube -> manette / Gameboy Player / F-Zero)
+	- porduit1.html		(Gamecube)
+	- porduit2.html		(PC-Engine)
+	- porduit3.html		(Manette Gamecube)
+	- porduit4.html		(Manette PC-Engine)
+	- porduit5.html		(Gameboy Player)
+	- porduit6.html		(Extensions PC-Engine)
+	- porduit7.html		(F-Zero GX)
+	- porduit8.html		(Castlevania Rondo of Blood)
+
+
+[ ]images :
+
+	- [ ] images acceuil :
+		- logo.png		image du logo du site, lien renvoyant à l'accueil
+
+	- [ ] images produits :
+		- [ ] images-produit1		(Gamecube)
+			- image1.png		image de 3/4 d'une gamecube
+			- image2.png		image d'une gamecube avec le capot ouvert
+			- image3.png		image de la boîte d'une gamecube
+		- [ ] images-produit2		(PC-Engine)
+			- image1.png		image de 3/4 d'une PC-Engine
+			- image2.png		image d'une PC-Engine et sa manette
+			- image3.png		image de la boîte d'une PC-Engine
+		- [ ] images-produit3		(Manette Gamecube)
+			- image1.png		image d'une manette gamecube de face
+			- image2.png		image d'une manette gamecube de côté
+			- image3.png		image de la boîte d'une manette gamecube
+		- [ ] images-produit4		(Manette PC-Engine)
+			- image1.png		image d'une mannette PC-Engine de face
+			- image2.png		image d'une manette PC-Engine de côté
+			- image3.png		image d'une mannette PC-Engine de face
+		- [ ] images-produit5		(Gameboy Player)
+			- image1.png		image de la boîte du Gameboy Player
+			- image2.png		image du Gameboy Player sous une gamecube
+			- image3.png		image de 3/4 du gameboy player 
+		- [ ] images-produit6		(Extensions PC-Engine)
+			- image1.png		image de 3/4 du CD-ROM²
+			- image2.png		image du CD-ROM² branché à une PC-Engine
+			- image3.png		image de la boîte du CD-ROM²
+		- [ ] images-produit7		(F-Zero GX)
+			- image1.png		image de la boîte du jeu F-Zero GX
+			- image2.png		image de l'écran de titre du jeu F-Zero GX
+			- image3.png		image de gameplay du jeu F-Zero GX
+		- [ ] images-produit8		(Castlevania Rondo of Blood)
+			- image1.png		image de la boîte du jeu Castlevania Rondo of Blood
+			- image2.png		image de gaemplay du jeu Castlevania Rondo of Blood
+			- image3.png		image d'une cinématique du jeu Castlevania Rondo of Blood

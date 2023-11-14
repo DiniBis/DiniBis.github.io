@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Support</title>
+    <link rel="icon" href="images/photo.jpg"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <ul class="menuderoulant">
+        <li><a href="index.html"> <img src="images/logo.webp" alt="logo représentant la PC-Engine de star parodier"> </a></li>
+        <li><input type="search" name="Recherche" alt="Recherche"></li>
+        <section class="scroll">
+          <li>Catégories ▽</li>
+            <ul class="sousmenu">
+              <li><a href="catégories/catégorie1.html">Consoles</a></li>
+              <li><a href="catégories/catégorie2.html">Manettes</a></li>
+              <li><a href="catégories/catégorie3.html">Accessoires</a></li>
+              <li><a href="catégories/catégorie4.html">Jeux</a></li>
+            </ul>
+        </section>
+        <li>Panier 🛒</li>
+      </ul>
+    </header>
+
+    <main>
+        <h1>Support :</h1>      
+        <div class="column">
+            <form action="https://api.web3forms.com/submit" method="post">
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+              <div class="no-text">
+                <section class="formulaire-info">
+                  <div class="form-gauche">
+                    <label for="nom"></label>
+                    <input type="name" name="nom" autocomplete="family-name" required placeholder="Nom *">
+    
+                    <label for="mail"></label>
+                    <input type="email" name="mail" autocomplete="email" required placeholder="Email *">
+    
+                    <label for="telehone"></label>
+                    <input type="tel" name="telehone" autocomplete="tel" required placeholder="Numéro de téléphone *">
+                  </div>
+                </section>
+                <section class="formulaire-texte">
+                  <div class="form-droite"> 
+                    <label for="texte"></label>
+                    <textarea name="texte" rows="5" placeholder="Zone de texte"></textarea>
+                  </div>
+                </section>
+              </div>
+    
+                <section class="formulaire-button">
+                  <div id="bouton-form">
+                    <label for="accepte">J'accepte d'être recontacté</label>
+                    <input type="checkbox" name="accepte">
+                    <input type="reset" value="Tout supprimer">
+                    <input type="submit" value="Envoyer">
+                  </div>
+                </section>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <h3>Blabla commercial</h3>
+        <a href="formulaire-contact.html">Support</a>
+      </footer>
+    </body>

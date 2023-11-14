@@ -28,7 +28,7 @@
 
 /*Ordinateur 16:9*/
 @media (min-width: 1024px) {
-    main {
+    .flex {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -48,7 +48,7 @@ body {background-color: rgb(240, 248, 255);
 }
 
 /*image ronde et description en dessous*/
-img:not(section=".case-reseau") {border-radius: 100%;}
+.flex img{border-radius: 100%;}
 figcaption {margin-left: 30px;}
 
 /*Police des textes*/
@@ -83,11 +83,14 @@ header {
 
 /*Tableau*/
 table {
-
     border-radius: 3%;
     border-color: rgb(71, 215, 213);
     background-color: white;
     margin-left: 20px;
+}
+.comp {
+    display: flex;
+    flex-direction: row;
 }
 /*Tableau -> couleur des cellules*/
 th {background-color: rgb(156, 215, 215);}
@@ -129,11 +132,16 @@ footer a {
     color: rgb(0, 255, 255);
     margin-left: 20px;
 }
-
+.preview-reseau {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
 .case-reseau img {
     height: 75px;
     width: 100px;
-
 }
 
 .case-reseau {
@@ -144,4 +152,17 @@ footer a {
     margin-bottom: 20px;
     width: 300px;
     height: 150px;
+    background-color: rgb(245, 250, 248);
+}
+
+.Mes-projets {
+    display: flex;
+    justify-content: center;
+}
+.Mes-projets a {
+    background-color: aquamarine;
+    border-radius: 20px;
+    font-size: 3rem;
+    padding: 20px;
+    margin: 20px;
 }
